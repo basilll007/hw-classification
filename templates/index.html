@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Cancer Cell Classifier</title>
+  <link rel="stylesheet" href="../static/style.css" />
+  <script defer src="../static/script.js"></script>
+</head>
+<body>
+  <div class="card">
+    <h2>Cancer Cell Classifier</h2>
+    <div class="row">
+      <div>
+        <label>Gene_E_Housekeeping</label>
+        <input id="g1" placeholder="e.g., 5.56" />
+      </div>
+      <div>
+        <label>Gene_A_Oncogene</label>
+        <input id="g2" placeholder="e.g., 14.88" />
+      </div>
+      <div>
+        <label>Gene_B_Immune</label>
+        <input id="g3" placeholder="e.g., 10.53" />
+      </div>
+      <div>
+        <label>Gene_C_Stromal</label>
+        <input id="g4" placeholder="e.g., 3.20" />
+      </div>
+      <div>
+        <label>Gene_D_Therapy</label>
+        <input id="g5" placeholder="e.g., 9.92" />
+      </div>
+      <div>
+        <label>Pathway_Score_Inflam</label>
+        <input id="g6" placeholder="e.g., 9.58" />
+      </div>
+      <div>
+        <label>UMAP_1</label>
+        <input id="g7" placeholder="e.g., 7.81" />
+      </div>
+      <div>
+        <label>Disease_Status</label>
+        <input id="status" placeholder="Tumor or Normal" />
+      </div>
+    </div>
+    <button onclick="sendPrediction()">Predict</button>
+    <div id="result" class="result"></div>
+  </div>
+</body>
+</html>
